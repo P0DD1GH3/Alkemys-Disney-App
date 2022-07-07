@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 
 @Entity                         //define clase como entidad. la cual se mapea a una tabla.
-@Table(name = "genero")         /* por default JPA le daría el mismo nombre que a la clase.
+@Table(name = "genre")         /* por default JPA le daría el mismo nombre que a la clase.
                                 en este caso se lo modificamos*/
 
 @Setter
@@ -17,10 +17,9 @@ import javax.persistence.*;
 public class PersonajeEntity {
 
     @Id
-    @Column
     private long id;
-    private String nombre;
-    private String imagen;
-    private String peliculas;
+    private String name;
+    private String image;
+    private String movies;
 
 }
