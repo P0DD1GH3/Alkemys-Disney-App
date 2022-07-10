@@ -27,10 +27,11 @@ public class PeliculaEntity {
     private int calificacion;
 
     //relacion con personajes
+
     /* PERSIST propaga la operacion de persistir de una entidad padre a hij@.
     Cuando guardamos la entidad pelicula la entidad personaje tambien se guarda
-    MERGE utiliza el mismo concepto de herencia como en este caso lo que hace es:
-     carga ambas entidades y luego actualiza ambas. las unifica MERGE*/
+    //MERGE utiliza el mismo concepto de herencia como en este caso. lo que hace es:
+     carga ambas entidades y luego actualiza ambas.*/
 
 
     @ManyToMany(
