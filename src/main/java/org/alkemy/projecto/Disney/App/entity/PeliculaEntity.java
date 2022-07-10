@@ -48,4 +48,9 @@ public class PeliculaEntity {
             inverseJoinColumns = @JoinColumn(name = "personaje_id")
     )
     private Set<PersonajeEntity> personajes = new HashSet<>();
+
+
+    @ManyToOne (fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    private GeneroEntity genero;
+
 };
