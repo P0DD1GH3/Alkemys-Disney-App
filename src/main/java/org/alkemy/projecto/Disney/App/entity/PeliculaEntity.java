@@ -1,4 +1,4 @@
-package entity;
+package org.alkemy.projecto.Disney.App.entity;
 
 
 import lombok.Getter;
@@ -44,13 +44,12 @@ public class PeliculaEntity {
 
     @JoinTable(
             name = "pelicula_personaje",
-            joinColumns = @JoinColumn(name = "pelicula_id"),
-            inverseJoinColumns = @JoinColumn(name = "personaje_id")
-    )
+            joinColumns = {@JoinColumn(name = "pelicula_fk")},
+            inverseJoinColumns = {@JoinColumn(name = "personaje_fk")})
     private Set<PersonajeEntity> personajes = new HashSet<>();
 
 
-    @ManyToOne (fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     private GeneroEntity genero;
 
 };

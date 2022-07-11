@@ -1,4 +1,4 @@
-package entity;
+package org.alkemy.projecto.Disney.App.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -17,7 +17,7 @@ public class GeneroEntity {
     private long id;
     private String nombre;
     private String imagen;
-    private String peliculas;
+    private String pelicula;
 
 
 }
