@@ -1,6 +1,6 @@
-package org.alkemy.projecto.Disney.App.entity;
+package entity;
 
-import lombok.Data;
+
 import lombok.Getter;
 import lombok.Setter;
 

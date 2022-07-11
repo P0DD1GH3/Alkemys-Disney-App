@@ -1,4 +1,4 @@
-package org.alkemy.projecto.Disney.App.entity;
+package entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -27,7 +27,7 @@ public class PersonajeEntity {
      * FetchType.EAGER es para que las peliculas se asocien al personaje de inmediato
      * con LAZY. tendriamos que hacer un "llamado" cada vez que querramos esta info, con EAGER
      * queda localizado en la memoria y con LAZY se borra cada vez que se cierra la sesion. LAZY es el tipo por defecto */
-    @ManyToMany(mappedBy = "pelicula", fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "pelicula", fetch = FetchType.LAZY)
     private Set<PeliculaEntity> peliculas = new HashSet<>();
 
 }

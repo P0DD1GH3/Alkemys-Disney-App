@@ -1,6 +1,8 @@
-package org.alkemy.projecto.Disney.App.entity;
+package entity;
+
 import lombok.Getter;
 import lombok.Setter;
+
 import javax.persistence.*;
 
 
@@ -16,6 +18,8 @@ public class GeneroEntity {
     private String nombre;
     private String imagen;
     private String peliculas;
+
+
 }
 
 
