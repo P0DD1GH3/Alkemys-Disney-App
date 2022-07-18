@@ -1,4 +1,4 @@
-package org.alkemy.projecto.Disney.App.entity;
+package org.Alkemy.DisneyApp.Entities;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,19 +7,17 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "genero")
+@Table(name = "genre")
 @Setter
 @Getter
 
-public class GeneroEntity {
+public class GenreEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
-    private String nombre;
-    private String imagen;
-    private String pelicula;
+    private String name;
+    private String image;
+    private String movie;
 
 
 }
-
-
